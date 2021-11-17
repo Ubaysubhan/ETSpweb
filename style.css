@@ -97,7 +97,13 @@ display: block;
 position: relative;
 transform: scale(.85);
 transition: transform 250ms ease-in-out;
+text-decoration: none ;
+text-align: center;
+color: black;
+line-height:1.2;
     }
+
+    
 
     .featured__item:hover,
     .featured__item:focus {
@@ -122,5 +128,21 @@ transition: transform 250ms ease-in-out;
 .featured__img{
     width:25em;
     height:25em;
+}
+
+.featured__item:hover .featured__details,
+.featured__item:focus .featured__details{
+    opacity: 1;
+}
+
+.featured__details{
+    opacity: 0;
+    transition: opacity 550ms linear;
+    text-shadow: 0 0 2em rgba(#fff,1);
+}
+.featured__details span{
+    display:block ;
+    font-weight:700;
+    font-size:2.5rem;
 }
 

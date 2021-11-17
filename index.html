@@ -14,8 +14,23 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
          <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            .debug {
+                border: 1px solid orange;
+            }
+        </style>
     </head>
     <body>
+        <nav class="width-100%">
+            <div class="w-8/12 mx-auto flex gap-2">
+                <div class="p-4 hover:bg-gray-300 cursor-pointer">Home</div>
+                <div class="p-4 hover:bg-gray-300 cursor-pointer">Dealers</div>
+                <div class="p-4 hover:bg-gray-300 cursor-pointer">About Us</div>
+                <div class="p-4 hover:bg-gray-300 cursor-pointer">Contact</div>
+            </div>
+        </nav>
       <header class="hero">
           <div class="container spacing">
               <h1 class="primary-title">NEW FEATURE COLLECTION IN 2021 by Muhammad Subhan</h1>
@@ -86,6 +101,40 @@
 
           </section>
       </main>
+
+        <footer class="width-100% bg-red-200 text-gray-700 py-8">
+            <div class="w-7/12 mx-auto grid grid-cols-5 gap-2">
+                <div class="flex flex-col gap-2">
+                    <div class="font-bold">HALAMAN</div>
+                    <div class="text-sm">Home</div>
+                    <div class="text-sm">Dealer</div>
+                    <div class="text-sm">About Us</div>
+                    <div class="text-sm">Contact</div>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <div class="font-bold">LAYANAN DEALER</div>
+                    <div class="text-sm">Pembelian Mobil Baru</div>
+                    <div class="text-sm">Servis Mesin</div>
+                    <div class="text-sm">Aksesoris</div>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <div class="font-bold">PROMO</div>
+                    <div class="text-sm">List Promo 2021</div>
+                    <div class="text-sm">Promo Awal Tahun 2022</div>
+                </div>
+                <div class="flex flex-col gap-2 col-span-2">
+                    <p class="font-bold">Ikuti berita ter-update!</p>
+                    <input class="py-2 px-4 rounded bg-white shadow-md" type="text" placeholder="john@example.com"></input>
+                    <p class="text-xs text-gray-500">Kanal lainnya</p>
+                    <div class="flex flex-row gap-2">
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+        </footer>
         <script src="" async defer></script>
     </body>
 </html>

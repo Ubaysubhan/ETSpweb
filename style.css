@@ -1,0 +1,126 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    line-height: 1.6;
+}
+
+img{
+    max-width: 100%;
+    display:block;
+    size:50%;
+}
+
+h1,
+h2,
+h3,
+p{
+    margin :0;
+}
+
+.container{
+    width: 90%;
+    max-width: 80em;
+    margin: 0 auto;
+}
+
+.split{
+    display: flex;
+    flex-wrap: wrap;
+    gap:2em;
+    justify-content: center;
+   
+}
+
+.btn{
+    display: inline-block;
+    text-decoration: none ;
+    padding: .5em 1.25em;
+    background: red;
+    color: var(--clr-text,black) ;
+    font-weight: 700;
+    text-transform: uppercase;
+    background:var(--clr-accent,pink);
+    font: size 1.125rem;
+    border-radius:.25em;
+    transition: 
+    transform 250ms ease-in-out,
+    opacity 175ms linear;
+}
+
+.btn:hover,
+.btn:focus{
+    transform:scale(1.1);
+    opacity: .9;
+}
+.primary-title{
+    font-size: 4rem;
+    font-size :clamp(3rem,calc( 5vw +1rem),4.5rem);
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.section-title{
+    text-align: center;
+    font-size:clamp(2.5rem, calc(5vw + 1rem),4rem);
+    line-height: 1;
+    color:#000080;
+    margin-bottom: 5rem;
+}
+
+section{
+    padding:7em 0;
+}
+.hero{
+    color: navyblue;
+    text-align: center;
+    padding: 15em 0;
+    background-image: url(furniture.jpg),
+    radial-gradient(#444, #111);
+    background-size: 100%;
+
+}
+
+.spacing >*+*{
+    margin-top: var(--spacer,2rem)
+}
+
+
+.featured__item{
+display: block;
+position: relative;
+transform: scale(.85);
+transition: transform 250ms ease-in-out;
+    }
+
+    .featured__item:hover,
+    .featured__item:focus {
+        transform: scale(1);
+    }
+
+.featured {
+        background: white;
+    }
+
+.featured__item:after {
+    content: "";
+    position: absolute;
+    top: 10%;
+    left:10%;
+    padding: 75% 75% 0 0 ;
+    border-radius: 50%;
+    background:red;
+    z-index: -1;
+}
+
+.featured__img{
+    width:25em;
+    height:25em;
+}
+

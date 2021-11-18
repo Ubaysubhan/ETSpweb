@@ -6,8 +6,11 @@
 
 body{
     margin: 0;
-    font-family: 'Noto Sans', sans-serif;
     line-height: 1.6;
+}
+
+main, header {
+    font-family: 'Noto Sans', sans-serif !important;
 }
 
 img{
@@ -58,6 +61,11 @@ p{
     transform:scale(1.1);
     opacity: .9;
 }
+
+.product__description {
+    font-size: 1em;
+}
+
 .primary-title{
     font-size: 4rem;
     font-size :clamp(3rem,calc( 5vw +1rem),4.5rem);
@@ -75,7 +83,7 @@ p{
 }
 
 section{
-    padding:7em 0;
+    padding-top:8em;
 }
 .hero{
     color: navyblue;
@@ -125,9 +133,10 @@ line-height:1.2;
     z-index: -1;
 }
 
+
 .featured__img{
-    width:25em;
-    height:25em;
+    width:15em;
+    height:15em;
 }
 
 .featured__item:hover .featured__details,

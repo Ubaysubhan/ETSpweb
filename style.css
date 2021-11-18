@@ -72,13 +72,14 @@ p{
     line-height: 1;
     text-transform: uppercase;
     text-align: center;
+    color: red;
 }
 
 .section-title{
     text-align: center;
     font-size:clamp(2.5rem, calc(5vw + 1rem),4rem);
     line-height: 1;
-    color:#000080;
+    color:red;
     margin-bottom: 5rem;
 }
 
@@ -107,7 +108,7 @@ transform: scale(.85);
 transition: transform 250ms ease-in-out;
 text-decoration: none ;
 text-align: center;
-color: black;
+color: red;
 line-height:1.2;
     }
 
